@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    tools:context=".Tuto1">
+
+    <TextView
+        android:id="@+id/infoTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/kdam_thmor_pro"
+        android:text="Tutoriel EMPOCT 1/2"
+        android:textAlignment="center"
+        android:textColor="#5B7BFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infoTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/kdam_thmor_pro"
+        android:text="Avec l'application EMPOCT, vous pouvez enregistrer le nombre de cigarette que vous fumez par jour en appuyant sur un simple bouton."
+        android:textAlignment="textStart"
+        android:textColor="#5B7BFF"
+        android:textSize="16sp"
+        android:justificationMode="inter_word" />
+
+    <TextView
+        android:id="@+id/infoTextView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/kdam_thmor_pro"
+        android:text="Appuyer simplement sur le gros bouton avec le logo de l'application de la page d'acceuil à chaque fois que vous fumez une cigarette."
+        android:textAlignment="textStart"
+        android:textColor="#5B7BFF"
+        android:textSize="16sp"
+        android:justificationMode="inter_word" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bigbouton_resized" />
+
+    <TextView
+        android:id="@+id/infoTextView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/kdam_thmor_pro"
+        android:text="Vous pourrez voir ensuite votre progression sur le long terme grâce aux différentes couleurs du calendrier de l'application."
+        android:textAlignment="textStart"
+        android:textColor="#5B7BFF"
+        android:textSize="16sp"
+        android:justificationMode="inter_word" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#5B7BFF"
+        android:layout_marginTop="5dp"
+        android:text="Suivant"
+        android:textColor="@color/white" />
+
+</LinearLayout>

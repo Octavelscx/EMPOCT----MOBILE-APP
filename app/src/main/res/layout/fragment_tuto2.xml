@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    tools:context=".Tuto2">
+
+    <TextView
+        android:id="@+id/infoTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/kdam_thmor_pro"
+        android:text="Tutoriel EMPOCT 2/2"
+        android:textAlignment="center"
+        android:textColor="#5B7BFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infoTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/kdam_thmor_pro"
+        android:text="Si vous posséder un appareil de mesure de monoxyde de carbone à l'air expiré, vous pouvez faire des relevés à partir de l'application afin de suivre le taux de monoxyde de carbone de vos poumons."
+        android:textAlignment="textStart"
+        android:textColor="#5B7BFF"
+        android:textSize="16sp"
+        android:justificationMode="inter_word" />
+
+    <TextView
+        android:id="@+id/infoTextView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/kdam_thmor_pro"
+        android:text="Aller dans l'onglet CO de l'application et récupérer vos relevés de monoxyde de carbone à l'air expiré via bluetooth avec votre appareil."
+        android:textAlignment="textStart"
+        android:textColor="#5B7BFF"
+        android:textSize="16sp"
+        android:justificationMode="inter_word" />
+
+    <TextView
+        android:id="@+id/infoTextView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/kdam_thmor_pro"
+        android:text="Les résultats seront sous la forme d'un graphique et vous aurez votre taux actuel de monoxyde de carbone présent dans vos poumons."
+        android:textAlignment="textStart"
+        android:textColor="#5B7BFF"
+        android:textSize="16sp"
+        android:justificationMode="inter_word" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#5B7BFF"
+        android:layout_marginTop="120dp"
+        android:text="Terminé"
+        android:textColor="@color/white" />
+
+</LinearLayout>

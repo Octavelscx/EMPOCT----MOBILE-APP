@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".NixFragment">
+
+    <LinearLayout
+        android:id="@+id/scanSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/retour1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Retour à l'accueil"
+            android:backgroundTint="#5B7BFF"
+            android:textColor="@color/white"
+            android:translationX="-250px" />
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="En travaux !"
+            android:fontFamily="@font/kdam_thmor_pro"
+            android:textSize="30sp"
+            android:layout_marginBottom="8dp"
+            android:justificationMode="inter_word" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/birdo" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mon Profil"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#5B7BFF"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp"/>
+
+        <!--Prenom lecture et recuperation lors de l'inscrition dans le fichier JSon-->
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prenom :"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView android:id= "@+id/firstNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="chargement..."
+            android:textSize="16sp"/>
+
+        <!--Nom lecture et recuperation lors de l'inscrition dans le fichier JSon-->
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom : :"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView android:id= "@+id/lastNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="chargement..."
+            android:textSize="16sp"/>
+
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom d'utilisateur :"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nom d'utilisateur"
+            android:inputType="text"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/changeUsernameButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modifier Nom d'utilisateur"
+            android:backgroundTint="#FFA500"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Mot de passe -->
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mot de passe :"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:enabled="false"
+            android:hint="**********"/>
+
+        <Button
+            android:id="@+id/changePasswordButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modifier le mot de passe"
+            android:backgroundTint="#FFA500"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Modification du mot de passe -->
+        <EditText
+            android:id="@+id/oldPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ancien mot de passe"
+            android:inputType="textPassword"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/newPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nouveau mot de passe"
+            android:inputType="textPassword"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/saveNewPasswordButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enregistrer le nouveau mot de passe"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"/>
+
+        <!-- Bouton Retour -->
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Retour"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+</ScrollView>

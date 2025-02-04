@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- fragment_bluetooth.xml -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollViewRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bluetooth">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Section avec deux boutons côte à côte -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="8dp">
+
+            <android.widget.Button
+                android:id="@+id/button1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/reg_resized"
+                android:backgroundTint="#5B7BFF" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#5B7BFF"
+                android:text="Home"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#5B7BFF"
+                android:text="CO"
+                android:textColor="@color/white" />
+
+            <android.widget.Button
+                android:id="@+id/button4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bird_resized" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Mesure de Monoxyde de Carbone dans les poumons, veuillez appuyer sur le bouton ci-dessous pour connecter l'appareil."
+            android:fontFamily="@font/kdam_thmor_pro"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"
+            android:justificationMode="inter_word" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Synchroniser mon appareil"
+            android:backgroundTint="#5B7BFF"
+            android:layout_marginBottom="16dp"
+            android:textSize="20sp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Assurez vous que le bluetooth et la localisation soit activés avant d'appuyer sur le bouton."
+            android:fontFamily="@font/kdam_thmor_pro"
+            android:textSize="15sp"
+            android:layout_marginBottom="8dp"
+            android:justificationMode="inter_word" />
+
+        <!-- TextView pour afficher le contenu du measurements.json -->
+        <TextView
+            android:id="@+id/textViewJsonContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/kdam_thmor_pro"
+            android:text="Le contenu du JSON apparaîtra ici..."
+            android:textSize="16sp" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp" />
+
+
+        <!-- Bouton “Rafraîchir le JSON” -->
+        <Button
+            android:id="@+id/buttonRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#5B7BFF"
+            android:text="Rafraîchir le JSON"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Planning de mesure"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#5B7BFF"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp"/>
+
+        <!-- Message 1 -->
+        <TextView
+            android:id="@+id/message1TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Veuillez suivre la posologie du dispositif prescrit par votre professionnel de santé"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+        <!-- Message 2 -->
+        <TextView
+            android:id="@+id/message2TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Si vous n'avez pas un professionnel de santé qui vous suit, prenez vos mesures deux fois par jour matin et soir"
+            android:textSize="16sp"
+            android:padding="8dp"/>
+
+        <!-- Bouton Retour -->
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Retour"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Conseils pour réduire votre consommation"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#5B7BFF"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp"/>
+
+        <!-- Zone pour les conseils (tu rempliras avec du texte plus tard) -->
+        <TextView
+            android:id="@+id/tipsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Conseil 1 : [À compléter]\n\n2. Conseil 2 : [À compléter]\n\n3. Conseil 3 : [À compléter]"
+            android:textSize="16sp"
+            android:padding="8dp"/>
+
+        <!-- Bouton Retour -->
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Retour"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+</ScrollView>

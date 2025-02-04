@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="À propos"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#5B7BFF"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp"/>
+
+        <!-- Bouton 1: Guide d'utilisation -->
+        <Button
+            android:id="@+id/guideButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guide d'utilisation du dispositif"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Bouton 2: Tips pour réduire la consommation -->
+        <Button
+            android:id="@+id/tipsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tips pour réduire votre consommation"
+            android:backgroundTint="#FFA500"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Bouton 3: Les dangers du tabac -->
+        <Button
+            android:id="@+id/dangerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Les dangers du tabac"
+            android:backgroundTint="#D32F2F"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Bouton Retour -->
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Retour"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+</ScrollView>
