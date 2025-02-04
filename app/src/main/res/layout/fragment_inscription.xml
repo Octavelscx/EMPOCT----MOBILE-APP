@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <!-- Titre "Inscription" -->
         <TextView
             android:id="@+id/infoTextView1"
             android:layout_width="wrap_content"
@@ -31,6 +32,7 @@
             android:text="Prénom"
             android:layout_marginTop="16dp" />
 
+        <!-- Formulaire EditText Prénom -->
         <EditText
             android:id="@+id/firstNameEditText"
             android:layout_width="match_parent"
@@ -44,6 +46,7 @@
             android:text="Nom"
             android:layout_marginTop="16dp" />
 
+        <!-- Formulaire EditText Nom -->
         <EditText
             android:id="@+id/lastNameEditText"
             android:layout_width="match_parent"
@@ -57,6 +60,7 @@
             android:text="Identifiant (pseudo ou mail pour la connexion)"
             android:layout_marginTop="16dp" />
 
+        <!-- Formulaire EditText Identifiant -->
         <EditText
             android:id="@+id/usernameEditText"
             android:layout_width="match_parent"
@@ -70,6 +74,7 @@
             android:text="Mot de Passe"
             android:layout_marginTop="16dp" />
 
+        <!-- Formulaire EditText Mot de Passe -->
         <EditText
             android:id="@+id/passwordEditText"
             android:layout_width="match_parent"
@@ -83,6 +88,7 @@
             android:text="Quel est votre jeu-vidéo préféré ?"
             android:layout_marginTop="16dp" />
 
+        <!-- Formulaire EditText Question de sécurité 1 -->
         <EditText
             android:id="@+id/securityQuestion1EditText"
             android:layout_width="match_parent"
@@ -95,6 +101,7 @@
             android:text="Quel est votre film préféré ?"
             android:layout_marginTop="16dp" />
 
+        <!-- Formulaire EditText Question de sécurité 2 -->
         <EditText
             android:id="@+id/securityQuestion2EditText"
             android:layout_width="match_parent"
@@ -107,12 +114,14 @@
             android:text="Quel est votre couleur préférée ?"
             android:layout_marginTop="16dp" />
 
+        <!-- Formulaire EditText Question de sécurité 3 -->
         <EditText
             android:id="@+id/securityQuestion3EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Réponse" />
 
+        <!-- Bouton Register -->
         <Button
             android:id="@+id/registerButton"
             android:layout_width="match_parent"
@@ -122,6 +131,7 @@
             android:layout_marginTop="24dp"
             android:textColor="@color/white" />
 
+        <!-- Espace vide pour scroll -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

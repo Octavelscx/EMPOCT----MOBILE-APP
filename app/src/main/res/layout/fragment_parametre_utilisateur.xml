@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- Boutons au lieu de TextView -->
+        <!-- Bouton "Profil" -->
         <Button
             android:id="@+id/profile"
             android:layout_width="match_parent"
@@ -20,6 +20,7 @@
             android:backgroundTint="#5B7BFF"
             android:textColor="@android:color/white" />
 
+        <!-- Bouton "Planning de mesure" -->
         <Button
             android:id="@+id/measurement_planning"
             android:layout_width="match_parent"
@@ -30,6 +31,7 @@
             android:backgroundTint="#5B7BFF"
             android:textColor="@android:color/white" />
 
+        <!-- Bouton "A Propos" -->
         <Button
             android:id="@+id/about"
             android:layout_width="match_parent"
@@ -40,15 +42,16 @@
             android:backgroundTint="#5B7BFF"
             android:textColor="@android:color/white" />
 
+        <!-- Bouton "Déconnexion" -->
         <Button
             android:id="@+id/logout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#FF0000"
             android:padding="16dp"
             android:text="Déconnexion"
-            android:textSize="18sp"
-            android:backgroundTint="#5B7BFF"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
 
         <!-- Bouton "Retour" -->
         <Button

@@ -19,7 +19,7 @@
             android:layout_gravity="center"
             android:paddingBottom="16dp"/>
 
-        <!-- Zone pour les conseils (tu rempliras avec du texte plus tard) -->
+        <!-- Zone pour les conseils (Remplir avec du texte plus tard) -->
         <TextView
             android:id="@+id/tipsTextView"
             android:layout_width="match_parent"

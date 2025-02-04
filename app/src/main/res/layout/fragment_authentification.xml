@@ -13,6 +13,7 @@
         android:orientation="vertical"
         android:gravity="center_horizontal">
 
+        <!-- Titre "Connexion" -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -23,6 +24,7 @@
             android:textStyle="bold"
             android:layout_marginBottom="24dp" />
 
+        <!-- Formulaire EditText Identifiant -->
         <EditText
             android:id="@+id/usernameEditText"
             android:layout_width="match_parent"
@@ -31,6 +33,7 @@
             android:inputType="text"
             android:layout_marginBottom="16dp" />
 
+        <!-- Formulaire EditText Mot de passe -->
         <EditText
             android:id="@+id/passwordEditText"
             android:layout_width="match_parent"
@@ -39,6 +42,7 @@
             android:inputType="textPassword"
             android:layout_marginBottom="16dp" />
 
+        <!-- Bouton 1 : Bouton de connexion -->
         <Button
             android:id="@+id/loginButton"
             android:layout_width="match_parent"
@@ -48,6 +52,7 @@
             android:layout_marginBottom="16dp"
             android:textColor="@color/white"/>
 
+        <!-- Bouton / Text : Bouton d'oubli de mot de passe -->
         <TextView
             android:id="@+id/forgotPasswordTextView"
             android:layout_width="wrap_content"

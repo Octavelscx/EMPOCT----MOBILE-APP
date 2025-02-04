@@ -15,6 +15,7 @@
         android:gravity="center_horizontal"
         android:padding="16dp">
 
+        <!-- Bouton Retour à l'accueil -->
         <Button
             android:id="@+id/retour1"
             android:layout_width="wrap_content"
@@ -24,6 +25,7 @@
             android:textColor="@color/white"
             android:translationX="-250px" />
 
+        <!-- Titre "En travaux" -->
         <TextView
             android:id="@+id/title1"
             android:layout_width="wrap_content"
@@ -35,6 +37,7 @@
             android:layout_marginBottom="8dp"
             android:justificationMode="inter_word" />
 
+        <!-- Image Nix -->
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
