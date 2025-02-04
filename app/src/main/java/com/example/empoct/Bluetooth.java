@@ -77,9 +77,20 @@ public class Bluetooth extends Fragment {
         lineChart = view.findViewById(R.id.chart);
 
         // Bouton 1
-        button1.setOnClickListener(v ->
-                Toast.makeText(getActivity(), "Paramètre Indisponible", Toast.LENGTH_SHORT).show()
-        );
+        button1.setOnClickListener(v -> {
+            Toast.makeText(getActivity(), "Paramètre", Toast.LENGTH_SHORT).show();
+            ParametreUtilisateur parametreUtilisateur = new ParametreUtilisateur();
+            getParentFragmentManager().beginTransaction()
+                    .setCustomAnimations(
+                            R.anim.slide_in_bottom,  // Entrée depuis le bas
+                            R.anim.slide_out_bottom, // Sortie vers le bas
+                            R.anim.slide_in_bottom,  // Retour depuis le bas
+                            R.anim.slide_out_bottom  // Retour vers le bas
+                    )
+                    .replace(R.id.main, parametreUtilisateur) // Remplace le fragment actuel
+                    .addToBackStack(null) // Ajoute dans la pile de retour
+                    .commit();
+        });
 
         // Bouton Refresh
         if (buttonRefresh != null) {
