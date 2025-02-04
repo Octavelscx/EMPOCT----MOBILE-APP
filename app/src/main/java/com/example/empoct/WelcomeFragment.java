@@ -46,11 +46,7 @@ public class WelcomeFragment extends Fragment {
                         .replace(R.id.main, tuto1) // Remplace Tuto1 par Tuto2
                         .addToBackStack(null) // Ajoute Tuto1 dans la pile pour pouvoir revenir
                         .commit();
-                // Exemple de navigation vers un autre fragment (si nécessaire)
-                // getParentFragmentManager().beginTransaction()
-                //     .replace(R.id.fragment_container, new NextFragment())
-                //     .addToBackStack(null)
-                //     .commit();
+
             }
         });
 

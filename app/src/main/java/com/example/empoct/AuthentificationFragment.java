@@ -1,6 +1,5 @@
 package com.example.empoct;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,11 +24,12 @@ import androidx.activity.OnBackPressedCallback;
 
 public class AuthentificationFragment extends Fragment {
 
+    // Déclaration des variables d'interface utilisateur
     private EditText usernameEditText, passwordEditText;
     private Button loginButton;
     private TextView forgotPasswordTextView;
 
-    private static final String FILE_NAME = "users.json";
+    private static final String FILE_NAME = "users.json"; // Nom du fichier contenant les utilisateurs
 
     @Nullable
     @Override
@@ -75,6 +75,7 @@ public class AuthentificationFragment extends Fragment {
         );
     }
 
+    // Méthode pour authentifier un utilisateur
     private void authenticateUser(String username, String password) {
         try {
             JSONArray usersArray = readUsersFromFile();
@@ -97,7 +98,7 @@ public class AuthentificationFragment extends Fragment {
                             .addToBackStack(null)
                             .commit();
 
-                    // Ajouter la notification juste après que MainPageConso soit affiché
+                    // Ajouter la notification après l'affichage de MainPageConso
                     getParentFragmentManager().executePendingTransactions(); // S'assure que la transaction est terminée
 
                     getParentFragmentManager().beginTransaction()
@@ -109,6 +110,7 @@ public class AuthentificationFragment extends Fragment {
                 }
             }
 
+            // Affiche un message si les identifiants sont incorrects
             Toast.makeText(getActivity(), "Identifiant ou mot de passe incorrect", Toast.LENGTH_SHORT).show();
 
         } catch (IOException | JSONException e) {
@@ -117,6 +119,7 @@ public class AuthentificationFragment extends Fragment {
         }
     }
 
+    // Lecture des utilisateurs depuis un fichier JSON
     private JSONArray readUsersFromFile() throws IOException, JSONException {
         FileInputStream fis = getActivity().openFileInput(FILE_NAME);
         byte[] data = new byte[fis.available()];
@@ -127,6 +130,7 @@ public class AuthentificationFragment extends Fragment {
         return new JSONArray(json);
     }
 
+    // Navigation vers la page de récupération du mot de passe
     private void navigateToForgotPasswordFragment() {
         Fragment forgotPasswordFragment = new ForgotPasswordFragment();
         getActivity().getSupportFragmentManager()
